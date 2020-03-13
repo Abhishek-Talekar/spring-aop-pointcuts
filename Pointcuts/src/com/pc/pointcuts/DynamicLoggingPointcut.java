@@ -14,10 +14,10 @@ public class DynamicLoggingPointcut extends DynamicMethodMatcherPointcut{
 			int a = (Integer) args[0];
 			int b = (Integer) args[0];
 			if (a>=100 && b>=100) {
-				
+				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 
 }
